@@ -1,12 +1,17 @@
-import IMG1 from '../assets/portfolio1.jpg'
-import IMG2 from '../assets/portfolio2.jpg'
-import IMG3 from '../assets/portfolio3.jpg'
-import IMG4 from '../assets/portfolio4.jpg'
-import IMG5 from '../assets/portfolio5.png'
-import IMG6 from '../assets/portfolio6.jpg'
+import interriorConsultant from '../assets/interrior-consultant.png'
+import errorPage from '../assets/404-not-found.png'
+import myTeamPage from '../assets/my-team-page.png'
+import booking from '../assets/booking.png'
+import imgUploader from '../assets/image-uploader.png'
+import toDo from '../assets/todo-app.png'
 
 const photos = [
-    IMG1, IMG2, IMG3, IMG4, IMG5, IMG6
+    { name: 'Image Uploader', img: imgUploader, live: true, url: "https://github.com/Aykhan85/image_uploader_api", liveUrl: 'https://image-uplader.onrender.com' },
+    { name: 'Todo App', img: toDo, live: true, url: 'https://github.com/Aykhan85/todo_backend', liveUrl: 'https://todo-app-boyu.onrender.com' },
+    { name: 'Interrior Consultant Page', img: interriorConsultant, live: false, url: 'https://github.com/Aykhan85/interrior-consultant' },
+    { name: 'Error Page', img: errorPage, live: false, url: 'https://github.com/Aykhan85/404-Not-Found-devchallenge-' },
+    { name: 'Team Page', img: myTeamPage, live: false, url: 'https://github.com/Aykhan85/team-page' },
+    { name: 'Booking App copy', img: booking, live: false, url: 'https://github.com/Aykhan85/booking' },
 ]
 
 const Portfolio = () => {
@@ -19,13 +24,13 @@ const Portfolio = () => {
                 {photos.map((photo, index) => (
                     < article className='portfolio__item' key={index} >
                         <div className="portfolio__item-image">
-                            <img src={photo} alt="project title" />
+                            <img src={photo.img} alt="project title" />
                         </div>
-                        <h3>This is a portfolio item title</h3>
+                        <h3>{photo.name}</h3>
 
                         <div className="portfolio__item-cta">
-                            <p className='btn'>Github</p>
-                            <a href='https://dribbble.com/Alien_pixels' className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+                            <a href={photo.url} className='btn'>Github</a>
+                            <a href={photo.liveUrl ? photo.liveUrl : undefined} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
                         </div>
                     </article >
                 ))}

@@ -327,6 +327,10 @@ nav a.active {
   gap: 1rem;
   margin-bottom: 0.8rem; }
 
+@media (min-width: 600px) {
+  .portfolio__item-image {
+    max-block-size: 150px; } }
+
 /* ///////////////// CONTACT CSS ///////////////// */
 .contact__container {
   display: grid;
