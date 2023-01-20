@@ -1,0 +1,17 @@
+/* //////////////////// CONTAINER CSS ///////////////// */
+.container {
+  inline-size: $container-width-sm;
+  margin: 0 auto;
+}
+
+@include for-tablet-portrait-up {
+  .container {
+    inline-size: $container-width-md;
+  }
+}
+
+@include for-tablet-landscape-up {
+  .container {
+    inline-size: $container-width-lg;
+  }
+}

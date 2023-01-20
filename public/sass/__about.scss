@@ -1,0 +1,93 @@
+/* ////////////// ABOUT CSS ////////////// */
+
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.about__me-container {
+  padding-inline: 0.625rem;
+  margin-block-end: 2.875rem;
+
+  .about__me {
+    inline-size: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      $color-primary,
+      transparent
+    );
+    display: grid;
+    place-items: center;
+    border-radius: 2rem;
+  }
+
+  .about__me-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: $transition;
+  }
+
+  .about__me-image:hover {
+    transform: rotate(0deg);
+  }
+}
+
+.about__cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about__card {
+  background: $color-bg-variant;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: $transition;
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: $color-primary-variant;
+}
+
+.about__icon {
+  color: $color-primary;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 0.95rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: $color-light;
+}
+
+.about__content p {
+  margin: 1.5rem 0 1.6rem;
+  color: $color-light;
+}
+
+@include for-tablet-portrait-up {
+  .about__me-container {
+    inline-size: 50%;
+    margin-inline: auto;
+    padding: 0;
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include for-desktop-up {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

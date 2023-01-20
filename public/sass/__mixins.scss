@@ -1,0 +1,52 @@
+/* /////////// MIXINS CSS //////////// */
+.text-light {
+  color: $color-light;
+}
+
+.btn {
+  inline-size: max-content;
+  display: inline-block;
+  color: $color-primary;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid $color-primary;
+  transition: $transition;
+}
+
+.btn:hover {
+  background-color: $color-white;
+  color: $color-bg;
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  color: $color-bg;
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

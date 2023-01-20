@@ -1,0 +1,35 @@
+/* ///////////////// PORTFOLIO CSS //////////////// */
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.6191rem, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio__item {
+  background: $color-bg-variant;
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: $transition;
+}
+
+.portfolio__item:hover {
+  background: transparent;
+  border-color: $color-primary-variant;
+}
+
+.portfolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.portfolio__item h3 {
+  font-size: clamp(1.2rem, 2.7vw, 1rem);
+  margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}

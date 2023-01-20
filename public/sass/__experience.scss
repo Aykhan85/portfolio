@@ -1,0 +1,48 @@
+/* //////////////////////// EXPERIENCE CSS ///////////// */
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.experience__container > div {
+  background: $color-bg-variant;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: $transition;
+}
+
+.experience__container > div:hover {
+  background: transparent;
+  border-color: $color-primary-variant;
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: $color-primary;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 32px;
+  column-gap: clamp(66px, 17.6vw, 5rem);
+}
+
+.experience__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details-icon {
+  margin-top: 0.375rem;
+  color: $color-primary;
+}
+
+@include for-tablet-landscape-up {
+  .experience__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

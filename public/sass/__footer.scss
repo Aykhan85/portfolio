@@ -1,0 +1,59 @@
+/* ///////////////// FOOTER CSS ////////////// */
+
+footer {
+  background: linear-gradient(to top, $color-primary 75%, transparent);
+  padding: 3rem 0;
+  text-align: center;
+  margin-block-start: 0.3125rem;
+}
+
+footer a {
+  color: $color-bg;
+}
+
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-block-end: 2rem;
+  display: block;
+}
+
+.permalinks {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto 1rem;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-block-end: 4rem;
+}
+
+.footer__socials a {
+  background: $color-bg;
+  color: $color-white;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: $transition;
+}
+
+.footer__socials a:hover {
+  background: transparent;
+  color: $color-bg;
+  border-color: $color-bg;
+}
+
+@include for-tablet-portrait-up {
+  .permalinks {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
