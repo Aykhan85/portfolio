@@ -25,11 +25,6 @@ const About = () => {
                             <small>1 Years</small>
                         </article>
 
-                        {/* <article className='about__card'>
-                            <FiUsers className='about__icon' />
-                            <h5>Clients</h5>
-                            <small>200+ Worldwide</small>
-                        </article> */}
 
                         <article className='about__card'>
                             <AiOutlineFundProjectionScreen className='about__icon' />
@@ -38,7 +33,6 @@ const About = () => {
                         </article>
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vero blanditiis quam, excepturi ipsum voluptates perspiciatis ipsam, minus vel error sint consequuntur deserunt, dolor enim? Et nesciunt nobis amet explicabo!</p>
 
                     <a href="#contact" className='btn btn-primary'>Let's Talk</a>
                 </div>

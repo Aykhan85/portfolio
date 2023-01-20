@@ -215,7 +215,8 @@ nav a.active {
 
 .about__cards {
   display: grid;
-  gap: 1.5rem; }
+  gap: 1.5rem;
+  margin-block-end: 2rem; }
 
 .about__card {
   background: #2c2c6c;
