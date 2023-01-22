@@ -30,7 +30,15 @@ const Portfolio = () => {
 
                         <div className="portfolio__item-cta">
                             <a href={photo.url} className='btn'>Github</a>
-                            <a href={photo.liveUrl ? photo.liveUrl : undefined} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+                            {
+                                photo.live && (
+                                    <a href={photo.liveUrl ? photo.liveUrl : undefined}
+                                        className='btn btn-primary'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >Live Demo</a>
+                                )
+                            }
                         </div>
                     </article >
                 ))}
