@@ -130,9 +130,9 @@ header {
   background: #4db5ff; }
 
 .me {
-  background: linear-gradient(#4db5ff, transparent);
+  background: linear-gradient(#4db5ff, transparent 80%);
   inline-size: 100%;
-  block-size: calc(100vh - 248.4px);
+  block-size: calc(100vh - 238.4px);
   margin-block-start: 62.4px;
   border-radius: 100vmax 100vmax 0 0;
   padding: 32px 1.5rem 0 1.5rem; }

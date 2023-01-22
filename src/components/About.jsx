@@ -1,6 +1,5 @@
-import ME from '../assets/me-about.jpg'
+import ME from '../assets/me2.jpg'
 import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai'
 const About = () => {
     return (

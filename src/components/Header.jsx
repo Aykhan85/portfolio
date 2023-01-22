@@ -1,5 +1,5 @@
 import CTA from './CTA'
-import ME from '../assets/me.png'
+import ME from '../assets/me.svg'
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
