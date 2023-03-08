@@ -1,4 +1,4 @@
-import CV from '../assets/CV - Aykhan Nematov.pdf'
+import CV from '../assets/Aykhan_Nematov_CV.pdf'
 const CTA = () => {
     return (
         <div className='cta'>
