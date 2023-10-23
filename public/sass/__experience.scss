@@ -1,11 +1,30 @@
 /* //////////////////////// EXPERIENCE CSS ///////////// */
-.experience__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+#experience h5 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 0.625rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.experience__container > div {
+#experience h2 {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+/* .experience__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+} */
+
+.experience__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.experience__frontend {
+  width: 100%;
   background: $color-bg-variant;
   padding: 2rem;
   border-radius: 2rem;
@@ -13,27 +32,49 @@
   transition: $transition;
 }
 
-.experience__container > div:hover {
+
+
+.experience__frontend:hover {
   background: transparent;
   border-color: $color-primary-variant;
 }
 
 .experience__container > div h3 {
+  font-family: 'Montserrat';
   text-align: center;
-  margin-bottom: 2rem;
-  color: $color-primary;
+  margin-bottom: 3rem;
+  
 }
 
 .experience__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   row-gap: 32px;
-  column-gap: clamp(66px, 17.6vw, 5rem);
+}
+
+.experience__content div:nth-child(2) {
+  justify-self: end;
+}
+
+.experience__content div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .experience__details {
   display: flex;
   gap: 1rem;
+
+}
+
+.experience__details div {
+  align-items: flex-start;
+}
+
+.experience__details div h4 {
+  font-size: 19px;
+  font-family: 'Palanquin';
 }
 
 .experience__details-icon {
@@ -44,5 +85,24 @@
 @include for-tablet-landscape-up {
   .experience__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience__frontend {
+    width: 70%;
+    padding: 4rem;
+  }
+}
+
+@include for-tablet-portrait-up {
+   .experience__frontend {
+    width: 70%;
+    padding: 4rem;
+  }
+}
+
+@include for-desktop-up {
+  .experience__frontend {
+    width: 50%;
+    padding: 4rem;
   }
 }

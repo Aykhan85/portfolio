@@ -1,14 +1,16 @@
 /* ///////////////// FOOTER CSS ////////////// */
 
 footer {
-  background: linear-gradient(to top, $color-primary 75%, transparent);
+  background: linear-gradient(to top, #2C2C6C 45%, transparent);
   padding: 3rem 0;
   text-align: center;
   margin-block-start: 0.3125rem;
 }
 
 footer a {
-  color: $color-bg;
+  color: white;
+  font-family: 'Palanquin';
+  font-weight: 500;
 }
 
 .footer__logo {
@@ -46,9 +48,8 @@ footer a {
 }
 
 .footer__socials a:hover {
-  background: transparent;
-  color: $color-bg;
-  border-color: $color-bg;
+  background: transparent; 
+  border-color: white;
 }
 
 @include for-tablet-portrait-up {
