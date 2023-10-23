@@ -422,6 +422,16 @@ nav a.active {
   display: grid;
   grid-template-columns: 1fr; }
 
+#contact h5 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 0.625rem;
+  font-family: 'Montserrat', sans-serif; }
+
+#contact h2 {
+  font-family: "Montserrat";
+  font-weight: bold; }
+
 .contact__options {
   display: flex;
   flex-direction: column;
